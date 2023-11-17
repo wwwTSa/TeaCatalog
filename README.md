@@ -1,7 +1,5 @@
 # TeaCatalog
 
-Descrição do projeto
-
 Criei uma aplicação web onde usei frameworks Blazor Server na qual disponibilizei um catálogo de produtos.
 
 A ideia principal deste projeto foi associar duas empresas, ambas as empresas com produtos relacionados com o chá. A empresa "Lendas Sublimes" a representar "Premium Tea - Chás em planta" e a empresa da "Costa Nova" a representar chávenas de chá.
