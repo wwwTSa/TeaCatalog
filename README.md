@@ -11,3 +11,4 @@ Na parte Web onde o cliente consegue visualizar os produtos, ao clicar no produt
 
 Paralelamente, contruí uma estrutura de dados json onde mencionei a informações/categorias dos produtos.
 
+![webblazorserver](https://github.com/wwwTSa/TeaCatalog/assets/150622695/e9cf5b06-4123-44b1-96d8-aa0a8a569514)
