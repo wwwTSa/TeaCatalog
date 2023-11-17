@@ -1,0 +1,107 @@
+﻿/* Estilo do cabeçalho da barra de pesquisa e navegação de categorias */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+input {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.category-nav button {
+    padding: 8px 12px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+/* Estilo da lista de produtos */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-details {
+    margin-top: 10px;
+}
+
+    .product-details h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+.product-price {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo do popup do produto */
+#catalog-container.popup-open .main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    backdrop-filter: blur(5px); /* Ajuste o valor conforme necessário */
+    z-index: 998; /* Coloque um número menor do que a z-index da janela pop-up */
+}
+
+.product-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+    .product-popup h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .product-popup p {
+        margin-bottom: 10px;
+    }
+
+    .product-popup button {
+        padding: 8px 12px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }

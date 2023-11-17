@@ -1,0 +1,287 @@
+﻿@page "/"
+@inject ProductService ProductService
+@inject JsonFileProductService JsonFileProductService
+@using BlazorServerCP.Models
+
+@inject IJSRuntime JSRuntime
+
+<h1 class="title-shop">
+    <a href="/catalog">Go Web</a>
+</h1>
+<main class="main bd-grid">
+    @foreach (var product in products)
+    {
+        <article class="card">
+            @if (!product.IsEditing)
+            {
+                <div class="card__img">
+                    <img src="@product.ImageURL" alt="Product Image" />
+                </div>
+                <div class="card__name">
+                    <p>@product.Name</p>
+                </div>
+                <div class="card__precis">
+                    <a href="" class="card__icon" @onclick="() => EditProduct(product)"><ion-icon name="create-outline"></ion-icon>
+
+                </a>
+                    <div>
+                        <a></a>
+                        <span class="card__preci card__preci--now">@product.Price €</span>
+                        <a></a>
+                    </div>
+                    <a href="" class="card__icon" @onclick="() => DeleteProduct(product)"><ion-icon name="trash-outline"></ion-icon></a>
+                </div>
+            }
+            else
+            {
+                <div class="card__edit-form">
+                    <label>Nome do Produto:</label>
+                    <input @bind="product.Name" />
+                
+                
+                    <label>Descrição:</label>
+                    <textarea @bind="product.Description" />
+                
+                    <label>Categoria:</label>
+                    <select @bind="product.CategoryId">
+                        @foreach (var category in categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                
+                    <label>URL da Imagem:</label>
+                    <input @bind="product.ImageURL" />
+                
+                    <label>Preço:</label>
+                    <input @bind="product.Price"  />
+
+                    @if (editValidationErrors.Count > 0 && isEditingForm)
+                    {
+                        <div class="validation-errors">
+                            @foreach (var error in editValidationErrors)
+                            {
+                                <p>@error</p>
+                            }
+                        </div>
+                    }
+
+                    <button @onclick="() => SaveEditedProduct(product)">Salvar</button>
+                    <button @onclick="CancelEdit">Cancelar</button>
+
+                    @if (validationErrors.Any())
+                    {
+                        <div class="error-messages">
+                            @foreach (var error in validationErrors)
+                            {
+                                <p>@error</p>
+                            }
+                        </div>
+                    }
+                </div>
+
+                
+            }
+        </article>
+    }
+</main>
+
+<div class="add-product-container">
+    <h3>Adicionar Produto</h3>
+
+    <label>Nome do Produto:</label>
+    <input @bind="newProduct.Name" placeholder="Nome do Produto" />
+
+    <label>Descrição:</label>
+    <textarea class="custom-textarea" @bind="newProduct.Description" placeholder="Descrição" />
+
+    <label>Categoria:</label>
+    <select @bind="newProduct.CategoryId">
+        @foreach (var category in categories)
+        {
+            <option value="@category.Id">@category.Name</option>
+        }
+    </select>
+
+    <label>URL da Imagem:</label>
+    <input @bind="newProduct.ImageURL" placeholder="URL da Imagem" />
+
+    <label>Preço:</label>
+    <input @bind="newProduct.Price" placeholder="Preço" />
+
+    <button @onclick="AddProduct">Adicionar Produto</button>
+
+    @if (validationErrors.Count > 0 && isNewProductForm)
+    {
+        <div class="validation-errors">
+            @foreach (var error in validationErrors)
+            {
+                <p>@error</p>
+            }
+        </div>
+    }
+</div>
+
+
+@code {
+    private Product newProduct = new Product();
+    private List<Product> products = new List<Product>();
+    private List<Category> categories = new List<Category>();
+
+    private List<string> validationErrors = new List<string>();
+    private bool isNewProductForm = true;
+
+    private List<string> editValidationErrors = new List<string>();
+    private bool isEditingForm = false;
+
+    //private bool showDeleteConfirmation = false;
+    //private Product productToDelete;
+
+    private int selectedCategoryId;
+
+    protected override void OnInitialized()
+    {
+        // Inicialize a lista local ao carregar o componente
+        products = ProductService.GetProducts().ToList();
+        categories = ProductService.GetCategories().ToList();
+    }
+
+    private void AddProduct()
+    {
+        validationErrors.Clear();
+
+        // Verifique se todos os campos obrigatórios estão preenchidos
+        if (string.IsNullOrWhiteSpace(newProduct.Name))
+        {
+            validationErrors.Add("Nome do Produto é obrigatório.");
+        }
+
+        if (string.IsNullOrWhiteSpace(newProduct.Description))
+        {
+            validationErrors.Add("Descrição é obrigatória.");
+        }
+
+        if (newProduct.CategoryId == 0)
+        {
+            validationErrors.Add("Selecione uma categoria.");
+        }
+
+        if (string.IsNullOrWhiteSpace(newProduct.ImageURL))
+        {
+            validationErrors.Add("URL da Imagem é obrigatória.");
+        }
+
+        if (newProduct.Price <= 0)
+        {
+            validationErrors.Add("Preço deve ser maior que zero.");
+        }
+
+        // Se houver mensagens de validação, não adiciona o produto
+        if (validationErrors.Count > 0)
+        {
+            isNewProductForm = true; // Ajuste aqui conforme necessário
+            return;
+        }
+
+        // Adiciona o produto se passar nas validações
+        ProductService.AddProduct(newProduct);
+        newProduct = new Product();
+
+        // Atualize a lista local diretamente
+        products = ProductService.GetProducts().ToList();
+    }
+
+    private async Task DeleteProduct(Product product)
+    {
+        bool confirmed = await JSRuntime.InvokeAsync<bool>("confirm", $"Tem certeza de que deseja excluir o produto '{product.Name}'?");
+
+        if (confirmed)
+        {
+            ProductService.DeleteProduct(product);
+            products.Remove(product);
+            product.IsEditing = false;
+        }
+    }
+    private void SaveProduct(Product product)
+    {
+        product.IsEditing = false;
+    }
+
+    private void EditProduct(Product product)
+    {
+        categories = ProductService.GetCategories().ToList();
+        foreach (var p in products)
+        {
+            p.IsEditing = false;
+        }
+
+        product.IsEditing = true;
+        product.SelectedCategoryId = product.CategoryId ?? 0;
+        isEditingForm = true;
+    }
+
+
+    private void SaveEditedProduct(Product product)
+    {
+        // Limpe as mensagens de validação anteriores
+        editValidationErrors.Clear();
+
+        // Verificações para o nome do produto
+        if (string.IsNullOrWhiteSpace(product.Name))
+        {
+            editValidationErrors.Add("O nome do produto é obrigatório.");
+        }
+
+        // Verificações para a descrição do produto
+        if (string.IsNullOrWhiteSpace(product.Description))
+        {
+            editValidationErrors.Add("A descrição do produto é obrigatória.");
+        }
+
+        // Verificações para a categoria do produto
+        if (product.CategoryId == null || product.CategoryId <= 0)
+        {
+            editValidationErrors.Add("A categoria do produto é obrigatória.");
+        }
+
+        // Verificações para a URL da imagem
+        if (string.IsNullOrWhiteSpace(product.ImageURL))
+        {
+            editValidationErrors.Add("A URL da imagem do produto é obrigatória.");
+        }
+
+        // Verificações para o preço do produto
+        if (product.Price <= 0)
+        {
+            editValidationErrors.Add("O preço do produto deve ser maior que zero.");
+        }
+
+        // Adicione mais verificações conforme necessário...
+
+        // Se houver mensagens de validação, não salva as alterações
+        if (editValidationErrors.Count > 0)
+        {
+            isEditingForm = true; // Ajuste aqui conforme necessário
+            return;
+        }
+
+        // Se tudo estiver válido, salva as alterações
+        ProductService.UpdateProduct(product);
+        product.IsEditing = false;
+
+        // Atualize a lista local diretamente
+        products = ProductService.GetProducts().ToList();
+        categories = ProductService.GetCategories().ToList();
+    }
+
+    private void CancelEdit()
+    {
+        // Cancelar a edição, redefinindo o estado para cada produto
+        foreach (var product in products)
+        {
+            product.IsEditing = false;
+        }
+    }
+}
+
+    

@@ -1,0 +1,574 @@
+[
+  {
+    "Id": 1,
+    "Name": "Chá em Planta Nascer do Sol Tropical",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chás rooibos com pedaços de maça , cascas de laranja , pedaços de gengibre , paus de canela , capim , limão , raspas de côco , pimenta rosa , cardamomo , flores centáurea-azuis e groselha.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9017-large_default/premium-tea-cha-em-planta-nascer-do-sol-tropical.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 2,
+    "Name": "Chá em Planta Bloqueador de Stress",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Infusão de visco branco , cascas de feijão , erva de St. John's , folhas de bétulas , folhas de ginkgo , folhas de urtiga e cascas de limão.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9029-large_default/premium-tea-cha-em-planta-bloqueador-de-stress.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 3,
+    "Name": "Chá em Planta Essência de Limão",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá aromatizado com pedaços de maça , pedaços de cenoura , pedaços de beterraba , passas , pedaços cristalizados de abacaxi e pedaços cristalizados de papaia , erva-cidreira , cascas de limão e flores de girassol.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9030-large_default/premium-tea-cha-em-planta-essencia-de-limao.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 4,
+    "Name": "Chá em Planta Sonho Exótico",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá aromatizado com flores de hibiscos , pedaços de maça , passas , pétalas de rosa ,pedaços cristalizados de abacaxi , pedaços cristalizados de papaia e flores de centaurea-azuis.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9031-large_default/premium-tea-cha-em-planta-sonho-exotico.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 5,
+    "Name": "Chá em Planta Pérola de Rio Nilo",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá vermelho , com pedaços cristalizados de abacaxi , pedaços cristalizados de papaia ,pedaços cristalizados de manga , groselhas negras , pedaços de morango e flores de girassol.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9032-large_default/premium-tea-cha-em-planta-perola-de-rio-nilo.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 6,
+    "Name": "Chá em Planta Oito Tesouros de Shaolin",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá verde china - seneha , Mini-Tuo Tea , Chun Mee , Pai Mu Tan , Lung Ching . Gomo de neve. Pi lo Chun. Pedaços cristalizados de abacaxi , pedaços de morango e flores de girassol.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9034-large_default/premium-tea-cha-em-planta-oito-tesouros-de-shaolin.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 7,
+    "Name": "Chá em Planta Rosa do Oriente",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá aromatizado com pedaços de maça , passas , pedacinhos de cenoura , pedaços de beterraba , flores de hibiscos , pedaços de papaia cristalizadas , pedaços de baunilha , flores de romã.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9035-large_default/premium-tea-cha-em-planta-rosa-do-oriente.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 8,
+    "Name": "Chá em Planta Marraquexe",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá verde da china , com folhas de hortelã , aroma a menta fresca.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9036-large_default/premium-tea-cha-em-planta-marraquexe.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 9,
+    "Name": "Chá em Planta Tesouro Verde do Japão",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá verde china sencha , chá verde do Japão-Baneha , Genmaicha (chá , arroz , milho ) , kukicha gyokuro , pedaços de morango e groselha.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9028-large_default/premium-tea-cha-em-planta-tesouro-verde-do-japao.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 10,
+    "Name": "Chá em Planta Templo Divino",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá branco China Pai Mu Tan , Chá verde darjeeling , chá verde china fog sencha .Lung Ching , Jasmin , pérolas jade jasmim , pedaços cristalizados de manga , pedaços cristalizados de abacaxi e pedaços cristalizados de papaia , aroma natural , cascas de laranja , pedaços de morango , groselhas , pedaços de ginjas , pedaços de damasco.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9027-large_default/premium-tea-cha-em-planta-templo-divino.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 11,
+    "Name": "Chá em Planta Himalaia",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá branco china Pai Mu Tan , chá verde darjeeling , chá verde china fog sencha , ching-lung Jasmin, pérolas jade jasmim , pedaços cristalizados de abacaxi , milho e folhas de curry.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9024-large_default/premium-tea-cha-em-planta-himalaia.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 12,
+    "Name": "Chá em Planta Biscoito de Chocolate e Amêndoa",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá preto Assam China , cascas de laranja , pedaços de cacau , raspas de coco , amêndoas torradas , pedaços de amendoim e pétalas de rosa.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9023-large_default/premium-tea-cha-em-planta-biscoito-de-chocolate-e-amendoa.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 13,
+    "Name": "Chá em Planta Rosa de Veneza",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá preto Assam china , chá preto china lichia , amêndoas torradas , pétalas de rosa , cardamomo , botões de rosa e pedaços de baunilha.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9022-large_default/premium-tea-cha-em-planta-rosa-de-veneza.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 14,
+    "Name": "Chá em Planta Tempero de Laranja",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá preto Assam china , chá preto china lichia , amêndoas torradas , pétalas de rosa , cardamomo , botões de rosa e pedaços de baunilha.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9021-large_default/premium-tea-cha-em-planta-tempero-de-laranja.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 15,
+    "Name": "Chá em Planta Caramelo Inglês",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá Oolong Assam China , pedaços de caramelo , açucar , leite condensado , xarope de glicose e leite em pó.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9020-large_default/premium-tea-cha-em-planta-caramelo-ingles.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 16,
+    "Name": "Chá em Planta Beleza de Cleópatra",
+    "Description": "Premium Tea é a marca de chás Premium em planta das Lendas Sublimes, capaz de impressionar pelos seus benefícios, aromas e sabores incríveis.\n\nIngredientes: Chá rooibos com pedaços de mirtilo , aroma a mirtilo e flores de milho.\n\nEmbalagem: Recarga de 150 Gramas = 60 chás.",
+    "Category": {
+      "Id": 2,
+      "Name": "Premium Tea - Chás em Planta"
+    },
+    "CategoryId": 2,
+    "ImageURL": "https://www.lendas-sublimes.pt/9019-large_default/premium-tea-cha-em-planta-beleza-de-cleopatra.jpg",
+    "Price": 21.53,
+    "IsEditing": false
+  },
+  {
+    "Id": 17,
+    "Name": "CHÁVENA E PIRES CHÁ 0.22 L ALENTEJO",
+    "Description": "Detalhes:\nTCS01-WHT | Grés fino. Fabricado em Portugal.\n12.1 x 9.7 H6.8 cm | 0.22 L D16.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1676388308_db22883ce425e6dc9f476d22182e18bc.jpg",
+    "Price": 15.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 18,
+    "Name": "CHÁVENA E PIRES CHÁ 0.22 L ALENTEJO",
+    "Description": "Detalhes:\nTCS01-TRQ | Grés fino. Fabricado em Portugal.\n12.1 x 9.7 H6.8 cm | 0.22 L D16.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1676388398_961929137f9f867108930ad0ab44d0fe.jpg",
+    "Price": 15.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 19,
+    "Name": "CHÁVENA E PIRES CHÁ 0.20 L AUGUSTA",
+    "Description": "Detalhes:\nCOCS01-NAB | Grés fino. Fabricado em Portugal.\n14.0 x 10.9 H5.6 cm | 0.20 L D16.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://costanova.pt/temp/1644579267_7b2522a8146fc31e259deddc3022947b.jpg",
+    "Price": 18.0,
+    "IsEditing": false
+  },
+  {
+    "Id": 20,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L BEJA",
+    "Description": "Detalhes:\nATCS01-CRM | Grés fino. Fabricado em Portugal.\n11.7 x 8.6 H7.1 cm | 0.19 L D16.7 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1617797984_2c0c6543a04532f0422a207f77159afa.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 21,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L BEJA",
+    "Description": "Detalhes:\nATCS01-BLU | Grés fino. Fabricado em Portugal.\n11.7 x 8.6 H7.1 cm | 0.19 L D16.7 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1617797914_b0428fdab647b5a57c1d7dbc6cb77155.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 22,
+    "Name": " CHÁVENA E PIRES CHÁ 0.19 L BEJA",
+    "Description": "Detalhes:\nATCS01-RED | Grés fino. Fabricado em Portugal.\n11.7 x 8.6 H7.1 cm | 0.19 L D16.7 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1617797870_e9c11af7ce855252345db9877189c705.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 23,
+    "Name": "CHÁVENA E PIRES CHÁ 0.23 L BRISA",
+    "Description": "Detalhes:\nLNCS02-SAL | Grés fino. Fabricado em Portugal.\n11.6 x 9.0 H4.8 cm | 0.23 L 15.4 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1653573339_9098d4ab3e01a52b4bcbe14620db8fba.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 24,
+    "Name": "CHÁVENA E PIRES CHÁ 0.23 L BRISA",
+    "Description": "Detalhes:\nLNCS02-RIA | Grés fino. Fabricado em Portugal.\n11.6 x 9.0 H4.8 cm | 0.23 L 15.4 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1644320608_122118fa3dd52c14261ed7ba16a3b0b8.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 25,
+    "Name": "CHÁVENA E PIRES CHÁ 0.26 L FRISO",
+    "Description": "Detalhes:\nFICS01-WHI | Grés fino. Fabricado em Portugal.\n13.1 x 10.4 H6.9 cm | 0.26 L D17.1 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679416025_dfb30c9e5790a9755d801538e149d219.jpg",
+    "Price": 15.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 26,
+    "Name": "CHÁVENA E PIRES CHÁ 0.26 L FRISO",
+    "Description": "Detalhes:\nFICS01-GRY | Grés fino. Fabricado em Portugal.\n13.1 x 10.4 H6.9 cm | 0.26 L D17.1 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1457346954_7042aecc208e6f361ceb2f61b796898a.jpg",
+    "Price": 7.75,
+    "IsEditing": false
+  },
+  {
+    "Id": 27,
+    "Name": " CHÁVENA E PIRES CHÁ 0.26 L FRISO",
+    "Description": "Detalhes:\nFICS01-SAG | Grés fino. Fabricado em Portugal.\n13.1 x 10.4 H6.9 cm | 0.26 L D17.1 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1611311450_2518f667699b6d0cd7cfc63e43a10c46.jpg",
+    "Price": 7.75,
+    "IsEditing": false
+  },
+  {
+    "Id": 28,
+    "Name": "CHÁVENA E PIRES CHÁ 0.21 L LAGOA",
+    "Description": "Detalhes:\nLOCS02-PDR | Grés fino. Fabricado em Portugal.\n11.2 x 8.6 H7.5 cm | 0.21 L D16.2 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679565230_72e4533331f6660d114354a1b7962046.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 29,
+    "Name": "CHÁVENA E PIRES CHÁ 0.21 L LAGOA",
+    "Description": "Detalhes:\nLOCS02-MTL | Grés fino. Fabricado em Portugal.\n11.2 x 8.6 H7.5 cm | 0.21 L D16.2 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679565350_f99c8fcba212e332abf05d3f5c1c2025.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 30,
+    "Name": "CHÁVENA E PIRES CHÁ 0.21 L LAGOA ECOGRES",
+    "Description": "Detalhes:\n1LOCS02e-WHI | Ecogres. Fabricado em Portugal.\n11.2 x 8.6 H7.5 cm | 0.21 L D 16.2 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679585822_ec5011bffd139d21524890c666af4867.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 31,
+    "Name": "CHÁVENA E PIRES CHÁ 0.21 L LAGOA ECOGRES",
+    "Description": "Detalhes:\n1LOCS02e-BLK | Ecogres. Fabricado em Portugal.\n11.2 x 8.6 H7.5 cm | 0.21 L D 16.2 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679585468_5b66086c8c6ba163d46478cde2905693.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 32,
+    "Name": "CHÁVENA E PIRES CHÁ 0.24 L LUZIA",
+    "Description": "Detalhes:\nPECS10-CLW | Grés fino. Fabricado em Portugal.\n12.5 x 9.8 H7.0 cm | 0.24 L D16.9 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679673353_0803befe7c0997dc84a7b331a328d82c.jpg",
+    "Price": 15.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 33,
+    "Name": "CHÁVENA E PIRES CHÁ 0.24 L LUZIA",
+    "Description": "Detalhes:\nPECS10-ASH | Grés fino. Fabricado em Portugal.\n12.5 x 9.8 H7.0 cm | 0.24 L D16.9 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679673329_fd0204fc2796006124b45754e6269a12.jpg",
+    "Price": 15.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 34,
+    "Name": "CHÁVENA E PIRES CHÁ 0.24 L LUZIA",
+    "Description": "Detalhes:\nPECS10-SLT | Grés fino. Fabricado em Portugal.\n12.5 x 9.8 H7.0 cm | 0.24 L D16.9 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1609849888_ead4f487b9c46c355a5ccd414f921888.jpg",
+    "Price": 7.75,
+    "IsEditing": false
+  },
+  {
+    "Id": 35,
+    "Name": "CHÁVENA E PIRES CHÁ 0.25 L MADEIRA",
+    "Description": "Detalhes:\nDECS03-BLU | Grés fino. Fabricado em Portugal.\n13.7 x 10.8 H6.5 cm | 0.25 L D16.4 cm\n\nUtilização:\n Próprio para máquina de lavar loiça e microondas. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679999427_5d59e596468d548585becc5c45699a49.jpg",
+    "Price": 18.0,
+    "IsEditing": false
+  },
+  {
+    "Id": 36,
+    "Name": "CHÁVENA E PIRES CHÁ 0.25 L MADEIRA",
+    "Description": "Detalhes:\nDECS03-LEM | Grés fino. Fabricado em Portugal.\n13.7 x 10.8 H6.5 cm | 0.25 L D16.4 cm\n\nUtilização:\n Próprio para máquina de lavar loiça e microondas. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679999822_61a188b66ae483b5ee1f43c7532c8b20.jpg",
+    "Price": 18.0,
+    "IsEditing": false
+  },
+  {
+    "Id": 37,
+    "Name": "CHÁVENA E PIRES CHÁ 0.25 L MADEIRA",
+    "Description": "Detalhes:\nDECS03-GRY | Grés fino. Fabricado em Portugal.\n13.7 x 10.8 H6.5 cm | 0.25 L D16.4 cm\n\nUtilização:\nPróprio para máquina de lavar loiça e microondas. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1679999649_b9185ea3202e09d477c1e8a58ea5f84b.jpg",
+    "Price": 18.0,
+    "IsEditing": false
+  },
+  {
+    "Id": 38,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L NOVA",
+    "Description": "Detalhes:\nNOCS01-WHI | Grés fino. Fabricado em Portugal.\n11.0 x 8.0 H7.5 cm | 0.19 L D15.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1613639236_42585d462d90a8e3be6cdf2560b0c67e.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 39,
+    "Name": " CHÁVENA E PIRES CHÁ 0.19 L NOVA",
+    "Description": "Detalhes:\nNOCS01-DEN | Grés fino. Fabricado em Portugal.\n11.0 x 8.0 H7.5 cm | 0.19 L D15.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1682518678_184c4b967406ffe4921a9289e82b18dc.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 40,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L NOVA",
+    "Description": "Detalhes:\nNOCS01-TRQ | Grés fino. Fabricado em Portugal.\n11.0 x 8.0 H7.5 cm | 0.19 L D15.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://costanova.pt/temp/1682515652_b6415da18751b1d353f2c8bc0c40c1e5.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 41,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L NOVA",
+    "Description": "Detalhes:\nNOCS01-SNG | Grés fino. Fabricado em Portugal.\n11.0 x 8.0 H7.5 cm | 0.19 L D15.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1682520105_21a49418f364b9d75a34faf744408422.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 42,
+    "Name": "CHÁVENA E PIRES CHÁ 0.19 L NOVA",
+    "Description": "Detalhes:\nNOCS01-BLK | Grés fino. Fabricado em Portugal.\n11.0 x 8.0 H7.5 cm | 0.19 L D15.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1681211519_c3b2f6a7748143326f9831a6795ce446.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 43,
+    "Name": "CHÁVENA E PIRES CHÁ 0.20 L NÓTOS",
+    "Description": "Detalhes:\nNRCS01-LTB | Grés fino. Fabricado em Portugal.\n11.5 x 9.0 H6.4 cm | 0.20 L D14.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1680086627_b640ba839e4e750e91000bab651bd45a.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  },
+  {
+    "Id": 44,
+    "Name": "CHÁVENA E PIRES CHÁ 0.20 L NÓTOS",
+    "Description": "Detalhes:\nNRCS01-DNP | Grés fino. Fabricado em Portugal.\n11.5 x 9.0 H6.4 cm | 0.20 L D14.8 cm\n\nUtilização:\nPróprio para máquina de lavar loiça, forno, microondas e congelador. Por precaução, aconselhamos a lavagem manual das peças maiores e mais delicadas.",
+    "Category": {
+      "Id": 1,
+      "Name": "Chavenas de Chá"
+    },
+    "CategoryId": 1,
+    "ImageURL": "https://www.costanova.pt/temp/1680086728_324810087f63cc32b0d98aed035bb36e.jpg",
+    "Price": 16.5,
+    "IsEditing": false
+  }
+]

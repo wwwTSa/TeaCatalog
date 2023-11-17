@@ -1,0 +1,138 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300,800');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.clipped {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    line-height: 1.2;
+    overflow: hidden;
+    background: url("https://www.w3schools.com/css/trolltunga.jpg") no-repeat #fff;
+    background-size: cover;
+    color: rgba(255,255,255,0.3);
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    /*-webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+  -webkit-filter: invert(100%) hue-rotate(0deg);
+  
+  change hue-rotate to play with tint */
+}
+
+#title {
+    overflow: hidden;
+    color: #fff;
+    mix-blend-mode: difference;
+    padding: 30px calc(15% - 20px);
+}
+
+input {
+    display: block;
+}
+
+.header {
+    height: 250px;
+    width: 100% - 10px;
+    overflow: hidden;
+    background: url("https://www.w3schools.com/css/trolltunga.jpg") no-repeat #fff;
+    background-size: cover;
+    margin: 20px 20px 0 20px;
+    border-radius: 8px;
+    box-shadow: 2px 3px 20px 0 rgba(0,0,0,0.3);
+}
+
+.container {
+    display: block;
+    width: 100%;
+    float: left;
+    max-width: 800px;
+}
+
+.upload {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    width: 20%;
+    margin-left: 10%;
+    display: block;
+    float: left;
+    overflow: visible;
+}
+
+input[name=titleInput] {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: .8em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 2px 1px 10px 0 rgba(0,0,0,0.5);
+}
+
+#uploadFile {
+    display: none;
+}
+
+#uploadButton {
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    height: 50px;
+    width: 100%;
+    font-size: .8em;
+    background-color: white;
+    border-radius: 3px;
+    border: 0;
+    text-align: left;
+    padding: 10px 15px;
+    box-shadow: 2px 1px 10px 0 rgba(0,0,0,0.5);
+}
+
+content {
+    display: block;
+    padding: 30px;
+    color: #fff;
+    opacity: .8;
+    padding: 30px 15%;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5pt;
+}
+
+hr {
+    margin: 10px 0 10px 0;
+    width: 30px;
+    height: 6px;
+    background-color: #2980b9;
+    border: 0;
+    text-align: left;
+}
+
+p {
+    font-size: .9em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+}

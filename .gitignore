@@ -1,0 +1,6 @@
+.vs
+.vscode
+lfs
+
+BlazorServerCP/bin/*
+BlazorServerCP/obj/*

@@ -1,0 +1,112 @@
+﻿@page "/catalog"
+@inject ProductService ProductService
+@using BlazorServerCP.Models
+
+
+<div id="catalog-container" class="@((isPopupOpen ? "popup-open" : ""))">
+    <div class="header">
+        <h1 class="title-shop">
+            <a>LENDAS SUBLIMES & COSTA NOVA</a>
+        </h1>
+        <div class="category-list">
+            @foreach (var category in categories)
+            {
+                <button style="margin-right:5px" @onclick="() => FilterByCategory(category.Id)">@category.Name</button>
+            }
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar por descrição..." @bind="searchTerm" />
+            <button @onclick="SearchProducts">Pesquisar</button>
+        </div>
+        
+    </div>
+
+    <main class="main bd-grid">
+        @foreach (var product in products)
+        {
+            <article class="card">
+                <div class="card__img" @onclick="() => ShowProductDetails(product)">
+                    <img src="@product.ImageURL" alt="Product Image" />
+                </div>
+                <div class="card__name">
+                    <p>@product.Name</p>
+                </div>
+                <div class="card__precis">
+                    <span class="card__preci card__preci--now">@product.Price €</span>
+                </div>
+            </article>
+        }
+    </main>
+
+    @if (selectedProduct != null)
+    {
+        <div class="product-popup">
+            <h2>@selectedProduct.Name</h2>
+            <p>@selectedProduct.Description</p>
+            <p>Categoria: @selectedProduct.Category.Name</p>
+            <p>Preço: @selectedProduct.Price €</p>
+            <button @onclick="CloseProductDetails">Fechar</button>
+        </div>
+    }
+    <h1 class="title-shop">
+        <a href="/">Go Admin</a>
+    </h1>
+</div>
+@code {
+    private List<Product> products = new List<Product>();
+    private List<Category> categories = new List<Category>();
+    private Product selectedProduct;
+    private string searchTerm = "";
+
+    private bool isPopupOpen = false;
+
+    protected override void OnInitialized()
+    {
+        products = ProductService.GetProducts().ToList();
+        categories = ProductService.GetCategories().ToList();
+    }
+
+    private void ShowProductDetails(Product product)
+    {
+        selectedProduct = product;
+        isPopupOpen = true;
+    }
+
+    private void CloseProductDetails()
+    {
+        selectedProduct = null;
+        isPopupOpen = false;
+    }
+
+    private void SearchProducts()
+    {
+        if (string.IsNullOrWhiteSpace(searchTerm))
+        {
+            // Se o termo de pesquisa estiver vazio, mostra todos os produtos novamente
+            products = ProductService.GetProducts().ToList();
+        }
+        else
+        {
+            // Filtra os produtos com base no termo de pesquisa
+            products = ProductService.GetProducts()
+                .Where(p => p.Description.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+                .ToList();
+        }
+    }
+
+    private void FilterByCategory(int categoryId)
+    {
+        // Se o categoryId for zero, mostra todos os produtos novamente
+        if (categoryId == 0)
+        {
+            products = ProductService.GetProducts().ToList();
+        }
+        else
+        {
+            // Filtra os produtos com base na categoria selecionada
+            products = ProductService.GetProducts()
+                .Where(p => p.Category.Id == categoryId)
+                .ToList();
+        }
+    }
+}
